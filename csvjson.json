@@ -1,0 +1,29 @@
+[
+  {
+    "Economic and Financial situation": 1,
+    "Leverage": 2,
+    "Profitability": 3,
+    "Cash flows": 1,
+    "Ownership Structure": 2,
+    "Management Quality": 3,
+    "Promptness/Willingness to Pay": 1,
+    "Strength of Sponsors": 2,
+    "Credit Bureau Report": 3,
+    "Sector Business": 1,
+    "Industry properties and future prospects": 2,
+    "Linkage of purpose to authorized business": 1,
+    "Routine of purpose to Borrower": 2,
+    "Borrower's financial contribution to Purpose (%)": 3,
+    "Justification of request": 1,
+    "Duration of facility": 3,
+    "Liquidity constraint implication to CBG": 2,
+    "Cashflow exclusive to CBG": 2,
+    "Viable primary source of repayment": 2,
+    "Existence of viable secondary means of repayment (not collateral)": 2,
+    "ds_ratio": 100,
+    "business_age": 2,
+    "length_rel": 3,
+    "positive_rel": True,
+    "complete_app": True
+  }
+]
