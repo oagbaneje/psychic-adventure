@@ -22,11 +22,11 @@ def accept_reject(credit_application):
                     (credit_application["complete_app"])).any:
                     score = calculate_score(credit_application)
                     if score < 222:
-                        return json.dumps({"verdict": "Accepted", "score": int(score)})
+                        return json.dumps({"verdict": "Accepted", "interest": 15})
                     elif score >= 222:
-                        return json.dumps({"verdict":"Accept with Caution", "score": int(score)})
+                        return json.dumps({"verdict":"Accept with Caution", "interest": 15})
                     else:
-                        return json.dumps({"verict": "Reject", "score": int(score)})
+                        return json.dumps({"verdict": "Reject", "interest": None})
     else:
         # check the score against threshold
         print("Reject")
