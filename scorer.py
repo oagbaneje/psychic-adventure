@@ -50,3 +50,9 @@ df = pd.read_csv("my_csv.csv")
 print(df.iloc[[0]])
 #df = pd.read_json("csvjson.json")
 print(accept_reject(df.iloc[[0]]))
+
+# Batch processing
+def batch_processing(json_file, number_of_chunks=1):
+    chunk_iter  = pd.read_json(json_file, lines=True, chunksize=number_of_chunks)
+    for chunk in chunk_iter:
+        accept_reject(chunk)
