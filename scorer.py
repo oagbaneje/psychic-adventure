@@ -53,6 +53,10 @@ print(accept_reject(df.iloc[[0]]))
 
 # Batch processing
 def batch_processing(json_file, number_of_chunks=1):
+    all_batches = []
     chunk_iter  = pd.read_json(json_file, lines=True, chunksize=number_of_chunks)
     for chunk in chunk_iter:
-        accept_reject(chunk)
+        all_batches.append(accept_reject(chunk))
+    df_all_batches = pd.concat(all_batches)
+    return all_batches
+        
